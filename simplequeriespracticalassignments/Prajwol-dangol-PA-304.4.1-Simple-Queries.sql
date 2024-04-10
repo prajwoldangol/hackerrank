@@ -29,7 +29,7 @@ FROM classicmodels.employees
 WHERE officeCode = 1
 order by lastName;
 
-SELECT productName As Name, productLine As "Product Line", productScale As Scale, productVendor As Vendor
+SELECT productName as Name, productLine as "Product Line", productScale as Scale, productVendor as Vendor
 FROM classicmodels.products
 WHERE productLine IN ('Classic Cars', 'Vintage Cars')
 ORDER BY productLine DESC, Name;
